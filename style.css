@@ -1,0 +1,402 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+button,
+input {
+    outline: none;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+
+/* title------------------- */
+.Title {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: #102b3e;
+    font-weight: bold;
+    height: 50px;
+    margin-bottom: 30px;
+}
+
+/* title end------------------- */
+
+/* header---------------------- */
+header {
+    width: 100%;
+}
+
+header .content-top {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    background-color: #3ac6ea;
+    font-size: 0.9rem;
+    padding: 5px 20px;
+    gap: 15px;
+}
+
+header .content-top a {
+    color: #102b3e;
+}
+
+header .navigation {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+
+header .logo-web,
+header nav {
+    width: 50%;
+    padding: 20px 50px;
+    font-weight: bold;
+}
+
+header .logo-web .Logo {
+    width: 25%;
+    height: 50px;
+    background-color: #102b3e;
+    border-radius: 10px;
+}
+
+header nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+header nav a {
+    color: #102b3e;
+}
+
+.responsive-nav {
+    display: none;
+    z-index: 99;
+}
+
+.responsive-nav.active {
+    background-color: #ced8e1;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+    padding: 10px;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    z-index: 99;
+}
+
+.responsive-nav a {
+    text-align: center;
+    width: 100%;
+    color: #102b3e;
+    font-weight: 300;
+    transition: 0.5s;
+    padding: 20px 0;
+}
+
+.responsive-nav a:hover {
+    color: #FF1700;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #1cc8a0;
+    border-radius: 7px;
+}
+
+
+
+header .jumbotron {
+    background-color: #3ac6ea;
+    width: 100%;
+    height: 70vh;
+    color: #102b3e;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+header .jumbotron .text-wellcome {
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: -2%;
+}
+
+header .jumbotron .text-wellcome h1 {
+    color: #102b3e;
+}
+
+header .jumbotron .text-wellcome button {
+    background-color: #102b3e;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+/* header end---------------------- */
+
+
+/* content------------------------- */
+.Content {
+    border: 2px solid #3ac6ea;
+    width: 100%;
+    padding: 10px;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 30px;
+}
+
+.Content .BoxContent {
+    width: 25%;
+    padding: 10px;
+}
+
+.Content .BoxContent .ItemContent {
+    background-color: #102b3e;
+    width: 100%;
+    height: 200px;
+    border-radius: 20px;
+}
+
+.Content .BoxContent .TitleContent {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+/* content end------------------------- */
+
+/* owner------------------------------ */
+.Owner {
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #102b3e;
+    color: #ced8e1;
+    padding: 30px 0;
+}
+
+.Owner .ItemOwner {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 500px;
+}
+
+.Owner .ItemOwner:nth-child(even) {
+    border: 3px solid #3ac6ea;
+}
+
+.Owner .ImgOwner {
+    background-color: #ced8e1;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.Owner .DescriptOwner {
+    width: 80%;
+    text-align: center;
+    margin-top: -70px;
+}
+
+/* owner end------------------------------ */
+
+
+/* main---------------------- */
+main {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    justify-content: space-between;
+}
+
+main .BoxItemMain {
+    border: 2px solid #3ac6ea;
+    width: 30%;
+    padding: 10px 0;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+main .ItemMain {
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+}
+
+main .ItemMain .ImgMain {
+    background-color: #102b3e;
+    width: 100%;
+    border-radius: 15px;
+    height: 150px;
+}
+
+main .ItemMain .DateMain {
+    width: 100%;
+    padding: 15px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    font-style: italic;
+    color: #102b3e;
+}
+
+main .ItemMain .TitleMain {
+    width: 100%;
+    padding: 10px 0;
+}
+
+main .ActionMain {
+    border-top: 2px solid #3ac6ea;
+    width: 100%;
+    padding: 10px 10px 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .ActionMain button {
+    background-color: #102b3e;
+    color: #ced8e1;
+    outline: none;
+    border-radius: 50px;
+    padding: 5px 15px;
+    border: none;
+}
+
+main .ActionMain ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+/* main end---------------------- */
+
+
+/* support----------------------- */
+.Support {
+    width: 100%;
+    display: flex;
+    margin-top: 100px;
+}
+
+.Support .BoxSupport {
+    background-color: #102b3e;
+    color: #ced8e1;
+    width: 50%;
+    padding: 30px 40px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+}
+
+.Support .BoxSupport:nth-child(2) {
+    background-color: #3ac6ea;
+    color: #102b3e;
+}
+
+.Support button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #3ac6ea;
+    color: #102b3e;
+    font-weight: bold;
+    border-radius: 30px;
+    border: 2px solid #3ac6ea;
+}
+
+.Support .BoxSupport:nth-child(2) button {
+    background-color: #102b3e;
+    color: #ced8e1;
+    border: 2px solid #102b3e;
+}
+
+/* support end----------------------- */
+
+/* Footer---------------------------- */
+footer {
+    background-color: #102b3e;
+    width: 100%;
+    padding: 20px 0;
+    margin-top: 100px;
+}
+
+footer .ItemFooter {
+    border-top: 2px solid #3ac6ea;
+    width: 25%;
+    margin: auto;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+}
+
+footer .ItemFooter:first-child {
+    justify-content: space-around;
+    font-size: 1.5rem;
+    color: #ced8e1;
+    padding: 30px;
+    width: 20%;
+    border: none;
+}
+
+footer .ItemFooter a {
+    color: #ced8e1;
+}
+
+/* Footer End---------------------------- */
